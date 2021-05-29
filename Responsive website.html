@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Responsive Web|Apna College</title>
+        <style>
+            .container{
+                display:flex;
+            }
+            body{
+                background-color: #efefef;
+                
+            }
+            .container{
+                padding:7px;
+            }
+            div{
+                margin-left:2cm;
+                
+            }
+            .sidebar{
+                float: left;
+                justify-content: left;
+                float: inline-start;
+            }
+            li{
+                list-style-image:url(icon_email.png);
+                list-style-position: inside;
+            }
+            @media screen and (max-width:900px) and (min-width:700px){
+               li{
+                   list-style-type: disc;
+                   list-style-image: none;
+               }
+               .id{
+                   visibility:hidden;
+               }
+               div{
+                   margin:0.5cm;
+               }
+            }
+            @media screen and (max-width:699px) and (min-width:360px){
+                li{
+                    list-style-type: square;
+                    list-style-image: none;
+                }
+                .container{
+                    margin:2px;
+                    padding:0px;
+                    display:flex;
+                    flex-direction: column;
+                    
+                }
+                .sidebar{
+                    margin:0px;
+                    padding:0px;
+                    text-align: center;
+                   
+                    border-radius:12px;
+                }
+
+                .main{
+                    display:flex;
+                    flex-direction: column;
+                    
+                    margin-top: 5px;
+                }
+                body{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size:1.2em;
+                background-color: grey;
+                color:white;
+                }
+                a:visited{
+                       color:bisque;   
+                }
+                a:hover{
+                    color:cadetblue;
+                }
+                
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Team Apna College</h3>
+                <ul>
+                    <li><a href="mailto:amandhattarwal@gmail.com">Aman Dhattarwal<div class="id">(amandhattarwal@gmail.com)</div> </a></li>
+                    <li><a href="mailto:rahulkumar@gmail.com">Rahul Kumar<div class="id">(rahulkumar@gmail.com)</div></a></li>
+                    <li><a href="mailto:urvigoel@gmail.com">Urvi Goel<div class="id">(urvigoel@gmail.com)</div></a></li>
+                </ul>
+            </div>
+            <div class="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem asperiores dolore quia unde, incidunt, consectetur odio ipsum totam provident nihil eius molestias. Pariatur iste natus dignissimos sed ut. Quaerat cum in exercitationem eveniet, quos quae aliquid assumenda qui? Esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quia, illum ea porro explicabo dolore iure corrupti fuga error provident necessitatibus?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas cum autem libero sapiente iusto et, dolor error nobis, officia, aperiam quibusdam reprehenderit odit dignissimos voluptatibus. Voluptatum ratione quos non deserunt consequatur, temporibus adipisci voluptates. Pariatur natus voluptatem quas officiis deserunt dicta veniam assumenda earum architecto aliquam adipisci saepe voluptatibus ratione possimus corrupti magnam at nihil repudiandae, tenetur aperiam. Delectus!</p></div>
+        </div>
+    </body>
+</html>
